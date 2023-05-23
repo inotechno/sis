@@ -199,6 +199,25 @@ class TransaksiModel extends CI_Model
 		return $this->db->get();
 	}
 
+	public function GetDetailTransaction($transaction_id)
+	{
+		$this->db->select('
+            p.title, 
+            p.barcode, 
+            p.price,
+			b.order_id,
+			b.santri_id,
+			b.wali_id
+        ');
+
+		$this->db->join('bills as b', 'b.id = bi.bill_id', 'LEFT');
+		$this->db->join('products as p', 'bi.product_id = p.id', 'LEFT');
+		$this->db->where('bi.bill_id', $transaction_id);
+		$this->db->from($this->table_items . ' as bi');
+		return $this->db->get();
+	}
+
+
 	function ReportTransaction($start, $end)
 	{
 		$this->db->select('
