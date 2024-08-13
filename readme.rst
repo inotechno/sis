@@ -1,71 +1,75 @@
-###################
-What is CodeIgniter 3
-###################
+# Student Management System
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Student Management System adalah aplikasi web yang dirancang untuk mempermudah pengelolaan data dan administrasi siswa. Aplikasi ini menyediakan berbagai fitur yang dirancang untuk memudahkan sekolah atau lembaga pendidikan dalam mengelola informasi terkait siswa, kehadiran, keuangan, serta kegiatan lainnya.
 
-*******************
-Release Information
-*******************
+## Fitur Utama
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+### 1. Master Data
 
-**************************
-Changelog and New Features
-**************************
+- **Tahun Ajaran**: Mengelola data tahun ajaran yang aktif.
+- **Kelas**: Menyusun dan mengelola data kelas untuk setiap tingkat.
+- **Mata Pelajaran**: Mengelola daftar mata pelajaran yang diajarkan.
+- **Santri**: Mengelola informasi siswa/santri.
+- **Wali Santri**: Mengelola data wali santri untuk setiap siswa.
+- **Ustadz/Guru**: Mengelola informasi guru/ustadz.
+- **Import Masal**: Mengimpor data siswa, guru, dan lainnya secara masal.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+### 2. Store/Kantin
 
-*******************
-Server Requirements
-*******************
+- **Kategori**: Mengelola kategori produk di kantin.
+- **Produk**: Mengelola daftar produk yang dijual di kantin.
 
-PHP version 5.6 or newer is recommended.
+### 3. Rombongan Belajar
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+Mengelola pengelompokan siswa dalam rombongan belajar sesuai dengan kelas dan tingkatnya.
 
-************
-Installation
-************
+### 4. Jadwal Pelajaran
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+Mengatur dan mengelola jadwal pelajaran untuk setiap kelas.
 
-*******
-License
-*******
+### 5. Kehadiran/Absensi
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+Mencatat dan memantau kehadiran siswa di setiap kelas.
 
-*********
-Resources
-*********
+### 6. Keuangan
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+- **SPP**: Mengelola pembayaran SPP siswa.
+- **Tabungan Santri**: Mengelola tabungan siswa dengan pencatatan yang terorganisir.
+- **History Saldo**: Melacak riwayat saldo tabungan siswa.
+- **History SPP**: Melacak riwayat pembayaran SPP siswa.
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+### 7. Transaksi
 
-***************
-Acknowledgement
-***************
+Melakukan transaksi pembelian di kantin menggunakan kartu siswa RFID.
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+### 8. Maklumat/Pengumuman
+
+Menyampaikan informasi atau pengumuman penting kepada siswa dan wali siswa.
+
+### 9. Konfigurasi
+
+- **Konfig Aplikasi**: Mengatur konfigurasi umum aplikasi.
+- **Visi Misi**: Mengelola visi dan misi lembaga.
+- **Xendit Key**: Konfigurasi integrasi dengan Xendit untuk pembayaran.
+- **Manage Contact**: Mengelola informasi kontak sekolah.
+
+### 10. Daftar User
+
+Mengelola pengguna aplikasi dan hak akses mereka.
+
+### 11. Penerimaan Tamu
+
+Mencatat penerimaan tamu dengan menggunakan kartu RFID untuk keperluan keamanan dan pencatatan.
+
+### 12. Laporan Transaksi
+
+Menghasilkan laporan transaksi di kantin serta transaksi lainnya yang berkaitan dengan keuangan siswa.
+
+## Instalasi
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan aplikasi ini di lingkungan Anda:
+
+1. Clone repositori ini:
+   ```bash
+   git clone https://github.com/inotechno/sis.git
+	
