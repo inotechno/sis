@@ -72,4 +72,5 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan aplikasi ini di lingkungan 
 1. Clone repositori ini:
    ```bash
    git clone https://github.com/inotechno/sis.git
+
 	
